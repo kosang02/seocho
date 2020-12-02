@@ -1,0 +1,100 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139148410-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139148410-2');
+
+
+
+</script>
+<style>
+
+div {
+  font-size:30px;
+
+}
+a {
+  text-decoration:none ; color:#000000
+
+ }
+oi {
+ text color: red;
+}
+div {
+  border-bottom: 4px;
+}
+
+.allbox {
+
+
+}
+
+body {
+  background-color: #ffd700;
+}
+.box1 {border-radius: 6px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  18px 18px 35px #dbdbdb,
+             -18px -18px 35px #ffffff;
+width: 100px;
+height: 70px;
+padding: 45px 100px 0px;}
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+</style>
+</head>
+
+
+
+
+<body>
+
+  <center>
+
+   <Br><h1 style="font-family: '굴림'"><a href="index.html">서초고 온라인수업 시간표</a></h1>
+
+
+
+<div style="line-height:50%;font-family: 'Nanum Gothic', sans-serif;">
+
+       <br><a href="1반/class1.html"><div class="box1">1반</div></a>
+       <br><a href="2반/class2.html"><div class="box1">2반</div></a>
+       <br><a href="3반/class3.html"><div class="box1">3반</div></a>
+       <br><a href="4반/class4.html"><div class="box1">4반</div></a>
+       <br><a href="5반/class5.html"><div class="box1">5반</div></a>
+       <br><a href="6반/class6.html"><div class="box1">6반</div></a>
+       <br><a href="7반/class7.html"><div class="box1">7반</div></a>
+       <br><a href="8반/class8.html"><div class="box1">8반</div></a>
+       <br><a href="9반/class9.html"><div class="box1">9반</div></a>
+       <br><a href="10반/class10.html"><div class="box1">10반</div></a>
+       <br><a href="11반/class11.html"><div class="box1">11반</div></a>
+</div>
+
+
+
+
+<br><br><br><br><br>kosang0234@gmail.com<br>
+만든사람: 고상혁
+
+
+
+
+
+
+
+  </center>
+
+
+</body>
