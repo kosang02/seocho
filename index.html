@@ -6,7 +6,22 @@
 <head>
   <meta charset="utf-8">
 
+  <!-- javascript 선언 -->
+  <script style="text/javascript" src="js/jquery.js"></script>
+  <script style="text/javascript" src="js/snowfall.jquery.js"></script>
+  <script style="text/javascript" src="js/snowfall.js"></script>
 
+  <script style="text/javascript">
+      <!-- 페이지 호출 시 실행 -->
+      $(document).ready(function(){
+          $(document).snowfall({
+              image :"img/flake.png",
+              minSize: 3,
+              maxSize:10,
+              flakeCount : 120
+          });
+      });
+  </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139148410-2"></script>
 <script>
@@ -21,6 +36,10 @@
 </script>
 <style>
 
+
+h1 {
+  font-size: 40px;
+}
 div {
   font-size:30px;
 
@@ -42,15 +61,61 @@ div {
 }
 
 body {
-  background-color: #ffffff;
+  background-image: url( "tempsnip.png" );
+  background-repeat : no-repeat;
+  background-position: 50% 190px;
+  background-color: #b4e3ff;
 }
 .box1 {border-radius: 6px;
-background: linear-gradient(145deg, #e6e6e6, #ffffff);
-box-shadow:  18px 18px 35px #dbdbdb,
-             -18px -18px 35px #ffffff;
+background: linear-gradient(145deg, #ffffff, #ffffff);
+box-shadow:  18px 18px 36px #950808,
+             -18px -18px 36px #980808;
 width: 100px;
 height: 70px;
 padding: 45px 100px 0px;}
+
+
+.acrylic {
+  padding: 4em 6em;
+  position: relative;
+  overflow: hidden;
+}
+
+.acrylic::before {
+
+  background-size: 100vw auto;
+  filter: blur(10px);
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  z-index: -1;
+}
+
+.acrylic::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.65;
+  border: 1px solid #fff;
+  background: #fff;
+
+}
+
+.shadow {
+  border-radius: 1px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  width: 100px;
+  height: 70px;
+  padding: 45px 100px 0px;
+}
 
 
 
@@ -65,27 +130,23 @@ padding: 45px 100px 0px;}
 
   <center>
 
-
-   <Br><h1 style="font-family: '굴림'"><a href="index.html">서초고 온라인수업 시간표</a></h1>
-     
-     
-     <br><br><h1>밴드에 새롭게 바뀐 시간표대로 수업 들어주세요</h1>
+   <Br><h1><a href="index.html">서초고 온라인수업 시간표</a></h1>
 
 
 
-<!-- <div style="line-height:50%;font-family: 'Nanum Gothic', sans-serif;">
+<div style="line-height:50%;font-family: 'Nanum Gothic', sans-serif;">
 
-       <br><a href="1반/class1.html"><div class="box1">1반</div></a>
-       <br><a href="2반/class2.html"><div class="box1">2반</div></a>
-       <br><a href="3반/class3.html"><div class="box1">3반</div></a>
-       <br><a href="4반/class4.html"><div class="box1">4반</div></a>
-       <br><a href="5반/class5.html"><div class="box1">5반</div></a>
-       <br><a href="6반/class6.html"><div class="box1">6반</div></a>
-       <br><a href="7반/class7.html"><div class="box1">7반</div></a>
-       <br><a href="8반/class8.html"><div class="box1">8반</div></a>
-       <br><a href="9반/class9.html"><div class="box1">9반</div></a>
-       <br><a href="10반/class10.html"><div class="box1">10반</div></a>
-       <br><a href="11반/class11.html"><div class="box1">11반</div></a>
+       <br><a href="1반/class1.html"><div class="acrylic shadow">1반</div></a>
+       <br><a href="2반/class2.html"><div class="acrylic shadow">2반</div></a>
+       <br><a href="3반/class3.html"><div class="acrylic shadow">3반</div></a>
+       <br><a href="4반/class4.html"><div class="acrylic shadow">4반</div></a>
+       <br><a href="5반/class5.html"><div class="acrylic shadow">5반</div></a>
+       <br><a href="6반/class6.html"><div class="acrylic shadow">6반</div></a>
+       <br><a href="7반/class7.html"><div class="acrylic shadow">7반</div></a>
+       <br><a href="8반/class8.html"><div class="acrylic shadow">8반</div></a>
+       <br><a href="9반/class9.html"><div class="acrylic shadow">9반</div></a>
+       <br><a href="10반/class10.html"><div class="acrylic shadow">10반</div></a>
+       <br><a href="11반/class11.html"><div class="acrylic shadow">11반</div></a>
 </div>
 
 
@@ -95,7 +156,7 @@ padding: 45px 100px 0px;}
 만든사람: 고상혁
 
 
--->
+
 
 
 
