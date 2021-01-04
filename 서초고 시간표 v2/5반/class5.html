@@ -1,0 +1,164 @@
+<!doctype html>
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+
+
+
+<head>
+  <meta charset="utf-8">
+
+  <!-- javascript 선언 -->
+  <script style="../text/javascript" src="../js/jquery.js"></script>
+  <script style="../text/javascript" src="../js/snowfall.jquery.js"></script>
+  <script style="../text/javascript" src="../js/snowfall.js"></script>
+
+  <script style="../text/javascript">
+      <!-- 페이지 호출 시 실행 -->
+      $(document).ready(function(){
+          $(document).snowfall({
+              image :"../img/flake.png",
+              minSize: 3,
+              maxSize:10,
+              flakeCount : 120
+          });
+      });
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-139148410-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139148410-2');
+
+
+
+</script>
+<style>
+
+
+h1 {
+  font-size: 40px;
+}
+div {
+  font-size:30px;
+
+}
+a {
+  text-decoration:none ; color:#000000
+
+ }
+oi {
+ text color: red;
+}
+div {
+  border-bottom: 4px;
+}
+
+.allbox {
+
+
+}
+
+body {
+  background-image: url( "../tempsnip.png" );
+  background-repeat : no-repeat;
+  background-position: 50.2% 190px;
+  background-color: #b4e3ff;
+}
+.box1 {border-radius: 6px;
+background: linear-gradient(145deg, #ffffff, #ffffff);
+box-shadow:  18px 18px 36px #950808,
+             -18px -18px 36px #980808;
+width: 100px;
+height: 70px;
+padding: 45px 100px 0px;}
+
+
+.acrylic {
+  padding: 4em 6em;
+  position: relative;
+  overflow: hidden;
+}
+
+.acrylic::before {
+
+  background-size: 100vw auto;
+  filter: blur(10px);
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  z-index: -1;
+}
+
+.acrylic::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.65;
+  border: 1px solid #fff;
+  background: #fff;
+
+}
+
+.shadow {
+  border-radius: 1px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 1px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  width: 100px;
+  height: 70px;
+  padding: 45px 100px 0px;
+}
+
+
+
+
+</style>
+</head>
+
+
+
+
+<body>
+
+  <center>
+
+   <Br><h1><a href="index.html">서초고 온라인수업 시간표</a></h1>
+
+     <br><h2>5반</h2>
+
+
+
+<div style="line-height:50%;font-family: 'Nanum Gothic', sans-serif;">
+
+       <br><a href="mon.html"><div class="acrylic shadow">월요일</div></a>
+       <br><a href="tue.html"><div class="acrylic shadow">화요일</div></a>
+       <br><a href="wed.html"><div class="acrylic shadow">수요일</div></a>
+       <br><a href="thu.html"><div class="acrylic shadow">목요일</div></a>
+       <br><a href="fri.html"><div class="acrylic shadow">금요일</div></a>
+
+</div>
+
+
+
+
+<br><br><br><br><br>kosang0234@gmail.com<br>
+만든사람: 고상혁
+
+
+
+
+
+
+
+  </center>
+
+
+</body>
